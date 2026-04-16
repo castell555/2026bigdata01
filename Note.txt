@@ -52,3 +52,33 @@ git merge (브랜치명) - 서로 합치기(합칠려는 브랜치에서 진행)
 6주차
 git log --oneline - 한 화면에 git을 보여줌
 git log --oneline --graph - 한 화면에 git을 그래프로 보여줌
+넘파이 핵심 요약(생성, 속성, 연산, 통계)
+	1. 배열 생성 (Creation)
+데이터를 담는 기본 단위인 ndarray를 만드는 방법입니다.
+리스트로 생성: np.array([1, 2, 3])
+연속 값 생성: np.arange(0, 10, 2) (0부터 10 미만까지 2씩 증가)
+0 또는 1로 채우기: np.zeros((2, 3)), np.ones((3, 3))
+랜덤 값: np.random.rand(2, 2) (0~1 사이 난수)
+	2. 배열 속성 (Attributes)
+생성된 배열이 어떤 상태인지 확인하는 명령어입니다. (괄호 () 없이 사용)
+모양 확인: arr.shape (예: (3, 2) → 3행 2열)
+차원 확인: arr.ndim (예: 1차원, 2차원 등)
+요소 개수: arr.size (전체 데이터 개수)
+데이터 타입: arr.dtype (int64, float64 등)
+	3. 배열 연산 (Operations)
+넘파이의 가장 큰 장점으로, 반복문 없이 배열끼리 바로 계산합니다.
+사칙연산: a + b, a - b, a * b, a / b (같은 위치의 요소끼리 계산)
+브로드캐스팅: arr + 10 (배열 전체 요소에 각각 10을 더함)
+행렬 곱: np.dot(a, b) 또는 a @ b
+	4. 통계 및 연산 함수 (Statistics)
+데이터의 특징을 한눈에 파악할 때 사용합니다.
+합계/평균: np.sum(arr), np.mean(arr)
+최대/최소: np.max(arr), np.min(arr)
+표준편차/분산: np.std(arr), np.var(arr)
+축(Axis) 계산: np.sum(arr, axis=0) (열 합계), axis=1 (행 합계)
+
+week06 merge branch 'dev03' numpy array creation
+
+
+7주차
+arr.T - 배열의 전치
