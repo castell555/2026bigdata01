@@ -1,7 +1,5 @@
 import random
-
 import numpy as np
-import random as rnd
 
 l1 = [9, '짬뽕', 3.7]
 array02 = np.array(l1)
@@ -20,5 +18,18 @@ l3 = []
 for j in range(3):
     l2.append(random.random())
 print(l2)
+
 for item in l2:
     l3.append(item * 10)
+print(l3)
+
+array04 = np.array(l2)
+print(array04 * 10)
+print(array04 > 0.5)
+
+print(np.mean(array02))
+print(np.median(array02))
+print(np.max(array02))
+print(np.min(array02))
+print(np.var(array02))
+print(np.std(array02)) #넘파이 연산
